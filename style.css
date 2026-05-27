@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    text-align: center;
+    background: linear-gradient(to right, #243b55, #141e30);    
+    user-select: none;
+    min-height: 330vh;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px;
+}
+nav{
+  background: #0000008c ;
+    color: white;
+    display: flex; 
+    justify-content: center;
+    gap: 30px;
+    align-items: center; 
+    position: fixed; 
+    top: 0;
+    left:0;
+    cursor: default;
+    width: 100%;
+    height:85px; 
+    z-index: 1000;
+}
+    nav a {
+    text-decoration: none;
+    color: #ffffff;
+    position: relative; /* Necessário para posicionar a linha */
+    padding-bottom: 1px; /* Espaço para a linha não ficar em cima do texto */
+    cursor: pointer;
+}
+
+/* Cria a linha oculta inicialmente */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0; /* Começa com 0 largura */
+    height: 2px; /* Espessura da linha */
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #3300fc, #95008a, #eb0000);
+    transition: 0.45s ease-in-out; /* Tempo da animação */
+}
+
+/* Mostra a linha no hover */
+nav a:hover::after {
+    width: 100%; /* Linha preenche toda a largura */
+}
+.navis{
+    font-size: 30px;
+}
+.foto{
+    border-radius: 20%;
+}
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.icone-social {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s ease-in-out;
+    overflow: hidden;
+}
+
+.icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transition: 0.6s ease-in-out;
+}
+.hover {
+    opacity: 0;
+}
+#bug{
+    width: 100px;
+    height: 125px;
+}
+.whatsapp:hover .normal {
+    opacity: 0;
+}
+.whatsapp:hover .hover {
+    opacity: 1;
+}
+.email:hover .normal {
+    opacity: 0;
+}
+.email:hover .hover {
+    opacity: 1;
+}
+.instagram:hover .normal {
+    opacity: 0;
+}
+
+.instagram:hover .hover {
+    opacity: 1;
+}
+h1{
+    color: white;
+}
+.biografia{
+    color:#83a2c8;
+    margin-top: 550px;
+}
+.biografia h1{
+    color:#8daed6;
+}
+.tudoemum{
+    position: relative;
+    margin-top: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    text-decoration: none;
+    flex-wrap: wrap ;
+}
+.projetos{
+    border: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 17px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.proj{
+    height: 400px;
+    width: 400px;
+    border-radius: 17px;
+}
+.projetos p{
+    text-decoration: none;
+    color: white;
+}
+.bug{
+    color: white;
+     position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.projetos:hover{
+    box-shadow: 0 10px 20px rgb(0, 0, 0);
+    transform: translateY(-5px) scale(1.05);
+}
+.projetos a{
+    text-decoration: none;
+}
+#jebada{
+    background-position: center;
+    object-fit: cover;
+}
