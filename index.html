@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <button class="sla" id="sla" type="button" onclick="tema()"></button>
+    </nav>
+    <form onsubmit="return false">
+    <div class="Loginpage">
+        <h1>Login</h1>
+        <div class="Username">
+            <label for="text"><h3>Username</h3><input type="text" id="username" placeholder="Digite seu username" required></label>
+        </div>
+        <div class="Password">
+            <div class="senha">
+                <label for="password"><h3>Password</h3> <input type="password" id="password" placeholder= "••••••••" required></label>
+            </div>
+            <br>
+            <div class="Butao">
+                <button class="submit" onclick="clicamento()" type="submit">Login</button>
+                <p id="resultado"></p>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>
